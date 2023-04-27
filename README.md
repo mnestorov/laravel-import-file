@@ -3,8 +3,6 @@
 
 # Import File with Artisan Command
 
----
-
 ## Task Definition
 
 Using Laravel create an Artisan command called `import_file` that accepts two arguments - `path_to_file` and `id`. 
@@ -13,8 +11,6 @@ On each line of the file there is a Record, that has two symbol unique Record Ty
 Each individual Record Type has its own fixed width scheme that determines the Start and End of each column. 
 You can find the full scheme specification in the attached file `import_file_specs.csv`. 
 The `id` parameter of the command uniquely identifies a file. Any consecutive import of a file with the same id should not result in duplicating the Records that have already been imported.
-
----
 
 ## How To Run
 
