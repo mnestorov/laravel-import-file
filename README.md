@@ -26,6 +26,8 @@ The `id` parameter of the command uniquely identifies a file. Any consecutive im
 
 - Run database migrations by running `php artisan migrate`.
 
+- Run database seeds by running `php artisan db:seed`.
+
 - Run the Laravel server by running `php artisan serve`.
 
 - To import a file, run `php artisan import_file /path/to/file file_id`. Replace `/path/to/file` with the actual path to the file you want to import and `file_id` with an integer value that uniquely identifies the file you're importing.
