@@ -3,6 +3,8 @@
 
 # Import File with Artisan Command
 
+This is a test project to import file with artisan command.
+
 ## Task Definition
 
 Using Laravel create an Artisan command called `import_file` that accepts two arguments - `path_to_file` and `id`. 
