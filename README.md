@@ -46,4 +46,4 @@ The `id` parameter of the command uniquely identifies a file. Any consecutive im
 
 ## License
 
-_This repository is [unlicense](https://choosealicense.com/licenses/unlicense/)[d], so feel free to fork!_
+This repository is [unlicense](https://choosealicense.com/licenses/unlicense/)[d], so feel free to fork!
