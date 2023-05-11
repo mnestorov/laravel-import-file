@@ -3,15 +3,21 @@
 
 # Import File with Artisan Command
 
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+
 This is a test project to import file with artisan command.
 
 ## Task Definition
 
 Using Laravel create an Artisan command called `import_file` that accepts two arguments - `path_to_file` and `id`. 
+
 The command should parse the attached file `PAYARC_DDF` that has a fixed width text format and import the data into a mysql database. 
+
 On each line of the file there is a Record, that has two symbol unique Record Type which starts from position 18, for example: "DT", "P1", "P2", etc. 
+
 Each individual Record Type has its own fixed width scheme that determines the Start and End of each column. 
 You can find the full scheme specification in the attached file `import_file_specs.csv`. 
+
 The `id` parameter of the command uniquely identifies a file. Any consecutive import of a file with the same id should not result in duplicating the Records that have already been imported.
 
 ## How To Run
@@ -37,3 +43,7 @@ The `id` parameter of the command uniquely identifies a file. Any consecutive im
 - To check if there are any pending jobs in the queue, run `php artisan queue:work`. This will start a worker process that will listen for jobs and execute them as they come in.
 
 **Note:** Make sure you have a running Redis or database queue driver configured to process queued jobs. You can check your queue driver settings in the `.env` file.
+
+## License
+
+_This repository is [unlicense](https://choosealicense.com/licenses/unlicense/)[d], so feel free to fork!_
